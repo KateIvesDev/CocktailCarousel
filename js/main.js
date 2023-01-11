@@ -157,16 +157,16 @@ function getDrinks(){
                     const leftBtn = document.createElement('button')
                     leftBtn.innerHTML = `<span class="material-symbols-outlined">
                     arrow_back_ios</span>`
-                    leftBtn.className = "btn prev-arrow"
+                    leftBtn.className = "prev-arrow"
 
                     const pauseBtn = document.createElement('button')
                     pauseBtn.innerHTML = `<span class="material-symbols-outlined">
                     play_pause</span>`
-                    pauseBtn.className = "btn pause"
+                    pauseBtn.className = "pause"
                     const rightBtn = document.createElement('button')
                     rightBtn.innerHTML = `<span class="material-symbols-outlined">
                     arrow_forward_ios</span>`
-                    rightBtn.className = "btn next-arrow"
+                    rightBtn.className = "next-arrow"
                     
                     btnWrapper.appendChild(leftBtn)
                     btnWrapper.appendChild(pauseBtn)
@@ -174,7 +174,7 @@ function getDrinks(){
                 }
         
                
-                cards[0].style.display = "block"
+                cards[0].style.display = "flex"
                  
                 let timer = setInterval(function(){ 
                     plusSlides(1)
@@ -220,7 +220,7 @@ function getDrinks(){
                     for(i=0; i < cards.length; i++){
                         cards[i].style.display = "none"
                     }
-                    cards[slideIndex-1].style.display = "block";
+                    cards[slideIndex-1].style.display = "flex";
                 }
 
                 const nextCard = document.querySelector(".next-arrow");
@@ -231,7 +231,7 @@ function getDrinks(){
 
             } else { 
                 document.querySelector('.empty-search').style.display = "block"
-                document.querySelector('.empty-search').textContent = "Search returned zero results, please try again"
+                document.querySelector('.empty-search').textContent = "Search returned zero results, please try a new search term."
             }
     })
     .catch(err => {
