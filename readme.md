@@ -2,7 +2,7 @@
 
 This is a fun vanilla JavaScript project utilizing TheCocktailDB API. It provides the user with a random cocktail recipe on initial page load. The user can also search for cocktail recipes by the name/partial name of a drink (e.g., search term "mary" might return Blood Mary or a Mary Pickford). If the search returns more the one recipe matching the search term, it will return a card carousel of the matching recipes, showing 1 card at a time. The carousel advances automatically, but it also includes a pause/play button as well as manual arrow controls. If the search result only returns 1 recipe, a single card is displayed without the carousel controls. If the search does not return any recipes, a message appears that zero results were found and asks the user to try again. A new search clears the carousel a returns new results.
 
-Link to project:
+Link to project: https://kateivesdev.github.io/CocktailCarousel/
 
 ## How It's Made
 Tech used: HTML, CSS, JavaScript, APIs
